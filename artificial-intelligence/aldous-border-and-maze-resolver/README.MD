@@ -21,10 +21,11 @@ Além disso, é feita uma comparação de desempenho de cada resolvedor, imprimi
 - Geração de labirintos com o algoritmo **Aldous-Broder** (em `maze.py`)
 
 ## 📁 Estrutura do Projeto
+```
 ├── maze.py # Interface gráfica, geração do labirinto e execução principal
 ├── resolvedor.py # Resolução via força bruta
 └── resolvedor_bfs.py # Resolução via BFS
-
+```
 
 ## ▶️ Como executar
 
