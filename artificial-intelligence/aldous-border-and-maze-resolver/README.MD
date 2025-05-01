@@ -1,7 +1,7 @@
 # 🧭 Maze Creator and Solver Visualizer (DFS & BFS)
 
 Este projeto utiliza o algoritmo de Aldous-Broder para criar um labirinto aleatório e em seguida visualiza a resolução de labirintos utilizando dois algoritmos de busca clássicos:  
-**Força Bruta ** e **BFS**.  
+**Força Bruta** e **BFS**.  
 
 Os caminhos encontrados por cada algoritmo são exibidos com cores distintas em uma interface gráfica feita com **Pygame**.
 
