@@ -26,7 +26,7 @@ class Celula:
         self.aberta = aberta
         self.entrada = False
         self.saida = False
-        self.caminho_visitado = False  # Atributo adicionado aqui
+        self.caminho_visitado = False
 
     def desenhar(self, tela, x, y, aresta):
         arSuperiorIni = (x, y)
@@ -154,12 +154,19 @@ def main():
     M = 41
     aresta = 10
 
+    preto = (0, 0, 0)
+    visitada = (128, 128, 128)
+    branco = (255, 255, 255)
+    rosa = (255, 192, 203)
+    azul = (0, 0, 255)
+    laranja = (255, 165, 0)
+    
     celulaPadrao = Celula(
         ArestasFechadas(True, True, True, True),
-        (0, 0, 0),          # corPreenchimento inicial (preto)
-        (128, 128, 128),    # corVisitada
-        (255, 255, 255),    # corLinha
-        (255, 255, 255),    # corAberta
+        preto,          # corPreenchimento inicial (preto)
+        visitada,    # corVisitada
+        branco,    # corLinha
+        branco,    # corAberta
         False, False        # visitada, aberta
     )
 
@@ -183,11 +190,11 @@ def main():
         linha, coluna = pos
         celula = labirinto.matriz[linha][coluna]
         if pos in set_dfs and pos in set_bfs:
-            celula.corPreenchimento = (255, 192, 203)  # Rosa
+            celula.corPreenchimento = rosa
         elif pos in set_dfs:
-            celula.corPreenchimento = (0, 0, 255)      # Azul
+            celula.corPreenchimento = azul
         elif pos in set_bfs:
-            celula.corPreenchimento = (255, 165, 0)    # Laranja
+            celula.corPreenchimento = laranja
 
     print(f"Tempo força bruta (DFS): {fim_fb - inicio_fb:.4f} segundos")
     print(f"Tempo BFS: {fim_bfs - inicio_bfs:.4f} segundos")
@@ -201,7 +208,7 @@ def main():
                 pygame.quit()
                 sys.exit()
 
-        tela.fill((255, 255, 255))  # Fundo branco
+        tela.fill(branco)  
         offset_x = (largura - M * aresta) // 2
         offset_y = (altura - N * aresta) // 2
         labirinto.matriz.DesenhaLabirinto(tela, offset_x, offset_y)
