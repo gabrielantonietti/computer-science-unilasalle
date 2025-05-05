@@ -1,4 +1,3 @@
-# resolvedor_bfs.py
 from collections import deque
 
 def resolver_labirinto_bfs(matriz):
@@ -42,7 +41,7 @@ def resolver_labirinto_bfs(matriz):
                 visitado[viz] = (linha, coluna)
                 fila.append(viz)
 
-    # Reconstrói o caminho da saída até a entrada
+
     caminho = []
     atual = saida
     while atual is not None:
