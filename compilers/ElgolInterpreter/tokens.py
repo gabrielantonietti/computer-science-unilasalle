@@ -1,0 +1,31 @@
+reserved_words = {
+    "elgio": "ELGIO",
+    "inteiro": "INTEIRO",
+    "zero": "ZERO",
+    "comp": "COMP",
+    "enquanto": "ENQUANTO",
+    "se": "SE",
+    "entao": "ENTAO",
+    "senao": "SENAO",
+    "inicio": "INICIO",
+    "fim": "FIM",
+    "maior": "MAIOR",
+    "menor": "MENOR",
+    "igual": "IGUAL",
+    "diferente": "DIFERENTE",
+    "x": "TIMES",
+}
+
+token_names = [
+    "IDENTIFIER",
+    "FUNCTION_NAME",
+    "INTEGER",
+    "EQUALS",
+    "PLUS",
+    "MINUS",
+    "DIVIDE",
+    "LPAREN",
+    "RPAREN",
+    "DOT",
+    "COMMA",
+] + list(reserved_words.values())
