@@ -321,14 +321,20 @@ METODOLODIA DE TESTES
 
 ---
 QUESTÃO 1: Quantos testes (comparações) serão feitos para descobrir que um valor não existe no caso da versão A?
+Neste caso, o tempo para procurar um valor não existente no vetor seria de: Big O(log n) pois esta é
+a performance da busca binária.
 ---
 
 ---
 QUESTÃO 2: E no caso da B? Mudou alguma coisa?
+No caso B precisamos usar um algoritmo de ordenamento(quicksort média:n log n, pior:n²) e depois a busca binária, logo: Big O(n²) + Big O(log n) na pior hipótese.
+Nos casos médios seria Big O(n log n + log n)
 ---
 
 ---
 QUESTÃO 3: Percebe alguma lentidão no algoritmo à medida que o tamanho do vetor aumenta? Tente com 100, 1000, 5000, 10 mil...?
+Sim, o ordenamento aumenta o tempo com o decorrer dos aumentos do vetor, porém, como, na maioria dos casos, nós temos uma perfomance
+que cresce logaritmicamente, temos uma perfomance relativamente razoável.
 ---
 
 
