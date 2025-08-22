@@ -330,4 +330,13 @@ QUESTÃO 2: E no caso da B? Mudou alguma coisa?
 ---
 QUESTÃO 3: Percebe alguma lentidão no algoritmo à medida que o tamanho do vetor aumenta? Tente com 100, 1000, 5000, 10 mil...?
 ---
+
+
+
+REFERÊNCIAS:
+
+https://www.programiz.com/dsa/quick-sort
+https://github.com/portfoliocourses/c-example-code/blob/main/quicksort.c 
+https://pt.khanacademy.org/computing/computer-science/algorithms/binary-search/a/implementing-binary-search-of-an-array
+
 */
